@@ -83,8 +83,8 @@ public class PDFRackController {
     }
 
     private void downloadBooks(String directory) {
-        String developersBook = new String("https://assets.openshift.com/hubfs/pdfs/OpenShift_for_Developers_Red_Hat.pdf");
-        String deployBook = new String("https://assets.openshift.com/hubfs/pdfs/Deploying_to_OpenShift.pdf");
+        String developersBook = new String("https://www.redhat.com/rhdc/managed-files/cl-oreilly-kubernetes-patterns-ebook-399085-202306-en.pdf");
+        String deployBook = new String("https://www.redhat.com/rhdc/managed-files/cl-oreilly-kubernetes-patterns-ebook-399085-202306-en.pdf");
 
         System.setProperty("http.agent", "Chrome");
 

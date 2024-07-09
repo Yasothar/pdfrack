@@ -84,14 +84,14 @@ public class PDFRackController {
 
     private void downloadBooks(String directory) {
         String developersBook = new String("https://www.redhat.com/rhdc/managed-files/cl-oreilly-kubernetes-patterns-ebook-399085-202306-en.pdf");
-        String deployBook = new String("https://www.redhat.com/rhdc/managed-files/cl-oreilly-kubernetes-patterns-ebook-399085-202306-en.pdf");
+        //String deployBook = new String("https://www.redhat.com/rhdc/managed-files/cl-oreilly-kubernetes-patterns-ebook-399085-202306-en.pdf");
 
         System.setProperty("http.agent", "Chrome");
 
         // Using nio so it will not consume memory in the container
         try {
-            this.downloadWithJavaNIO(deployBook, directory + "/deploy.pdf");
-            this.downloadWithJavaNIO(developersBook, directory + "/developer.pdf");
+            this.downloadWithJavaNIO(deployBook, directory + "/cl-oreilly-kubernetes-patterns-ebook-399085-202306-en.pdf");
+            //this.downloadWithJavaNIO(developersBook, directory + "/developer.pdf");
         } catch (Exception e) {
             e.printStackTrace();
         }

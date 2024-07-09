@@ -91,7 +91,7 @@ public class PDFRackController {
         // Using nio so it will not consume memory in the container
         try {
             //this.downloadWithJavaNIO(deployBook, directory + "/cl-oreilly-kubernetes-patterns-ebook-399085-202306-en.pdf");
-            this.downloadWithJavaNIO(developersBook, directory + "/developer.pdf");
+            this.downloadWithJavaNIO(developersBook, directory + "/cl-oreilly-kubernetes-patterns-ebook-399085-202306-en.pdf");
         } catch (Exception e) {
             e.printStackTrace();
         }
